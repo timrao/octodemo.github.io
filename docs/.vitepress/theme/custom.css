@@ -1,0 +1,199 @@
+/* .vitepress/theme/custom.css */
+:root {
+  --vp-c-brand-1: #027151;
+  --vp-c-brand-2: #0e9d73;
+  --vp-c-brand-3: #027151;
+}
+
+.VPHero .image-src {
+  max-width: 38%;
+  height: auto;
+}
+
+.container-accordion {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.accordion-item {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, .125);
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+/* 手风琴容器 */
+.vp-accordion-wrapper {
+  position: relative;
+}
+
+.vp-accordion {
+  position: relative;
+  border-bottom: 1px solid var(--vp-c-divider);
+  font-size: 14px;
+}
+
+/* 标题区域 */
+.vp-accordion summary {
+  padding: 12px 1.32rem 12px 0;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  /* font-weight: 600; */
+  color: var(--vp-c-text-1);
+}
+
+/* 自定义箭头 */
+.vp-accordion summary::after {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--vp-c-text-2);
+  transition: transform 0.25s linear;
+}
+
+.vp-accordion[open] summary::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+/* 内容区域 */
+.vp-accordion-content {
+  padding: 0 16px;
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    padding 0.3s linear;
+}
+
+.vp-accordion-content ol,
+.vp-accordion-content ul {
+  list-style: disc;
+  list-style-type: disc;
+  padding-left: 1.4rem;
+}
+
+.vp-accordion-content li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
+}
+
+.vp-accordion[open] .vp-accordion-content {
+  max-height: 2000px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 14px 0 22px;
+}
+
+/* 彩色手风琴 */
+.accordion-primary .vp-accordion {
+  border-color: var(--vp-c-brand);
+}
+
+.accordion-primary summary::after {
+  color: var(--vp-c-brand);
+}
+
+/* 紧凑模式 */
+.accordion-compact .vp-accordion {
+  border-radius: 4px;
+}
+
+.accordion-compact summary {
+  padding: 8px 12px;
+  /* font-size: 0.9em; */
+}
+
+/* 在 style 容器中使用手风琴 */
+.style-box .vp-accordion {
+  background: var(--vp-c-bg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vp-accordion summary::after {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M8.59 16.58L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.42z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.vp-accordion[open] summary::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.vp-accordion[open] summary {
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+@media (prefers-color-scheme: dark) {
+  .accordion-primary .vp-accordion {
+    border-color: var(--vp-c-brand-dark);
+  }
+}
+
+.sub-title {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.main-title {
+  font-size: 20px;
+  font-weight: 590;
+}
+
+.VPPage :not(pre)>code {
+  border-radius: 4px;
+  padding: 3px 6px;
+  /* background-color: var(--vp-code-bg); */
+  transition: color 0.25s, background-color 0.5s;
+}
+
+.VPPage :not(pre, h1, h2, h3, h4, h5, h6)>code {
+  color: var(--vp-code-color);
+}
+
+.VPPage a:not(.btn-a) {
+  font-weight: 400;
+  color: var(--vp-c-brand-1);
+  text-underline-offset: 2px;
+  transition: color 0.25s, opacity 0.25s;
+}
+
+.VPPage table {
+  width: 100%;
+  font-family: var(--vp-font-family-base);
+}
+
+.th-bottom-line tr th {
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.th-bottom-line tbody tr:first-child td {
+  padding-top: 12px;
+}
+
+.table-pre table {
+  margin: 0 5px;
+}
+
+.table-pre tr th {
+  padding: 10px;
+}
+
+.table-pre tr td {
+  font-size: 14px;
+  padding: 10px;
+}

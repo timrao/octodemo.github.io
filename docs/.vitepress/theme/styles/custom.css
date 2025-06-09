@@ -1,0 +1,23 @@
+/* .vitepress/theme/custom.css */
+:root {
+  --vp-c-brand-1: #027151;
+  --vp-c-brand-2: #0e9d73;
+  --vp-c-brand-3: #027151;
+}
+
+.VPHero .image-src {
+  max-width: 38%;
+  height: auto;
+}
+
+html:root {
+  --vp-c-price-light-color: #1236e0;
+  --vp-c-price-black-color: #000000;
+  --vp-c-sub-txt-color: rgba(0, 0, 0, 0.6);
+}
+
+html[class~="dark"]:root {
+  --vp-c-price-light-color: #1236e0;
+  --vp-c-price-black-color: #FFFFFF;
+  --vp-c-sub-txt-color: rgba(255, 255, 255, 0.6);
+}

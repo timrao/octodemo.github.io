@@ -1,0 +1,21 @@
+export default {
+    pricing_title_1: "Simple pricing,",
+    pricing_title_2: "for everyone.",
+    pricing_sub_title: "It doesn't matter what size your business is, our software will work well for you.",
+    standard_license: "Standard License",
+    standard_license_desc: "For users with few devices",
+    standard_license_buy_button: "Buy now",
+    standard_license_features_1: "2 devices/ license (2 seat)",
+    common_license_features_1: "Activation on all platforms",
+    common_license_features_2: "Unlock all premium features",
+    common_license_features_3: "Perpetual license",
+    common_license_features_4: "One year of updates",
+    personal_license: "Personal License",
+    personal_license_desc: "For multi-devices users",
+    personal_license_buy_button: "Buy now",
+    personal_license_features_1: '5 devices/ license (5 seat)',
+    team_license: "Team License",
+    team_license_desc: "For team or enterprises",
+    team_license_buy_button: "Buy now",
+    team_license_features_1: "Multi-device discount"
+}

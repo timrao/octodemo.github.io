@@ -1,0 +1,44 @@
+// @import "./reset.scss";
+@import "./common.scss";
+
+/* 单行超出省略文本 */
+
+.txt-overflow {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.txt-overflow-l2,
+.txt-overflow-l3,
+.txt-overflow-l4 {
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+/* 2行省略 */
+
+.txt-overflow-l2 {
+    -webkit-line-clamp: 2;
+}
+
+/* 3行省略 */
+
+.txt-overflow-l3 {
+    -webkit-line-clamp: 3;
+}
+
+/* 4行省略 */
+
+.txt-overflow-l4 {
+    -webkit-line-clamp: 4;
+}
+
+.txt-underline,
+.underline {
+    text-decoration: underline;
+}

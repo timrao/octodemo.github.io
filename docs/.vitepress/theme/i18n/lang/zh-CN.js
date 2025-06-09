@@ -1,0 +1,21 @@
+export default {
+    pricing_title_1: "简单定价，",
+    pricing_title_2: "为了每个人。",
+    pricing_sub_title: "无论你的业务规模有多大，我们的软件都能很好地适应你。",
+    standard_license: "标准许可证",
+    standard_license_desc: "适用于设备较少的个人用户",
+    standard_license_buy_button: "购买标准许可证",
+    standard_license_features_1: "支持2台设备(2个席位)",
+    common_license_features_1: "支持全平台激活",
+    common_license_features_2: "解锁所有高级版的功能",
+    common_license_features_3: "永久许可证",
+    common_license_features_4: "一年内的支持和更新",
+    personal_license: "个人许可证",
+    personal_license_desc: "适用于设备较多的个人用户",
+    personal_license_buy_button: "购买个人许可证",
+    personal_license_features_1: '支持5台设备(5个席位)',
+    team_license: "团队/企业许可证",
+    team_license_desc: "适用于团队或者企业",
+    team_license_buy_button: "联系我们",
+    team_license_features_1: "支持多台设备折扣"
+}
